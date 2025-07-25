@@ -15,7 +15,7 @@ This project implements a conversational AI assistant for an e-commerce setting,
 
 ## Demo
 
-Streamlit Cloud Deployment: [https://d3bgufv6gothniutjlksud.streamlit.app](https://d3bgufv6gothniutjlksud.streamlit.app/))  
+Streamlit Cloud Deployment: [https://d3bgufv6gothniutjlksud.streamlit.app](https://d3bgufv6gothniutjlksud.streamlit.app/) 
 
 ## Getting Started
 
