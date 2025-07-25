@@ -7,7 +7,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 if not openai.api_key:
     st.error("❌ OPENAI_API_KEY is missing."); st.stop()
 
-# ---------- 商品数据 ----------
+# ---------- Product Data ----------
 catalog = json.load(open("catalog.json"))
 prod_vecs = np.load("catalog_vectors.npy")
 
@@ -16,7 +16,7 @@ def knn(vec: np.ndarray, k=10):
     idx = sims.argsort()[-k:][::-1]
     return idx, sims[idx]
 
-# ---------- 品类向量 ----------
+# ---------- Category Vectors ----------
 CATEGORIES = {
     "t-shirt":      "Short-sleeve tee shirt for sports or daily wear.",
     "backpack":     "Backpack carried on the back for commuting or travel.",
@@ -45,7 +45,7 @@ def product_matches(cat, product):
     if not cat: return True
     return cat in f"{product['name']} {product['desc']}".lower()
 
-# ---------- 安全图片加载 ----------
+# ---------- Safe Image Loading ----------
 def safe_image(path_or_url, caption="", width=180, keyword_fallback=None):
     try:
         if Path(path_or_url).is_file():
@@ -60,9 +60,9 @@ def safe_image(path_or_url, caption="", width=180, keyword_fallback=None):
                 alt = f"https://source.unsplash.com/400x400?{keyword_fallback}"
                 data = requests.get(alt, timeout=8); data.raise_for_status()
                 img = Image.open(BytesIO(data.content))
-                st.info(f"图片失效，用“{keyword_fallback}”随机图代替")
+                st.info(f"Image unavailable. Replaced with a random image of“{keyword_fallback}”.")
             except Exception as e2:
-                st.warning(f"🖼️ 图片加载失败：{e2}"); return
+                st.warning(f"🖼️ Failed to load image:{e2}"); return
         else:
             return
     st.image(img, caption=caption, width=width)
@@ -77,20 +77,20 @@ if "chat" not in st.session_state:
          "content":"You are an enthusiastic e-commerce assistant. "
                    "Always reply in the same language as the user."}]
 
-tab1, tab2 = st.tabs(["聊天 / 推荐", "以图搜货"])
+tab1, tab2 = st.tabs(["Chat / Recommend", "Image Search"])
 
-# ===== Tab1：聊天 + 图片推荐 =====
+# ===== Tab1: Chat + Product Recommendation =====
 with tab1:
     for m in st.session_state.chat[1:]:
         with st.chat_message(m["role"]):
             st.markdown(m["content"])
 
-    user_msg = st.chat_input("提问或输入“推荐 …”")
+    user_msg = st.chat_input("Ask a question or enter 'recommend ...'")
     if user_msg:
         st.chat_message("user").markdown(user_msg)
         st.session_state.chat.append({"role":"user","content":user_msg})
 
-        if user_msg.lower().startswith(("推荐", "recommend")):
+        if user_msg.lower().startswith(("recommend")):
             cat = detect_category(user_msg)
             q_vec = openai.embeddings.create(
                 model="text-embedding-3-small", input=user_msg
@@ -106,7 +106,7 @@ with tab1:
 
             with st.chat_message("assistant"):
                 if results:
-                    st.markdown(f"为你挑选了以下 **{cat or '相关'}** 商品：")
+                    st.markdown(f"Here are some **{cat or 'related'}** products we picked for you:")
                     for p in results:
                         col1, col2 = st.columns([1,3], gap="small")
                         with col1:
@@ -117,7 +117,7 @@ with tab1:
                         with col2:
                             st.markdown(f"**{p['name']}**  \n￥{p['price']}")
                 else:
-                    st.markdown("抱歉，目录中没有符合条件的商品。")
+                    st.markdown("Sorry, no matching products found in the catalog.")
 
                 st.session_state.chat.append({"role":"assistant","content":"(image list rendered)"})
         else:
@@ -130,9 +130,9 @@ with tab1:
             st.chat_message("assistant").markdown(ans)
             st.session_state.chat.append({"role":"assistant","content":ans})
 
-# ===== Tab2：图搜 =====
+# ===== Tab2：Image Search =====
 with tab2:
-    img_file = st.file_uploader("上传商品图片", type=["jpg", "png"])
+    img_file = st.file_uploader("Upload product image", type=["jpg", "png"])
     if img_file:
         img_bytes = img_file.read()
         vision = openai.chat.completions.create(
@@ -148,7 +148,7 @@ with tab2:
                 ]}
             ]
         ).choices[0].message.content.strip()
-        st.write("**图像描述：** ", vision)
+        st.write("**Image Description:** ", vision)
 
         q_vec = openai.embeddings.create(
             model="text-embedding-3-small", input=vision

@@ -4,6 +4,7 @@
     "name": "Sport T-Shirt",
     "desc": "Moisture-wicking polyester tee, ideal for running and gym.",
     "price": 25.99,
+    "category": "t-shirt",
     "img": "images/sporttshirt.jpg"
   },
   {
@@ -11,6 +12,7 @@
     "name": "City Backpack",
     "desc": "20 L water-resistant daypack for daily commute or travel.",
     "price": 49.5,
+    "category": "backpack",
     "img": "images/citybackpack.jpg"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Wireless Earbuds",
     "desc": "Bluetooth 5.3 earbuds with ANC and 30-hour battery life.",
     "price": 89.0,
+    "category": "earbuds",
     "img": "images/wirelessearbuds.jpg"
   },
   {
@@ -25,6 +28,7 @@
     "name": "Yoga Mat",
     "desc": "6 mm eco-friendly TPE mat, non-slip texture, 183 × 61 cm.",
     "price": 32.8,
+    "category": "mat",
     "img": "images/yogamat.jpg"
   },
   {
@@ -32,6 +36,7 @@
     "name": "Insulated Water Bottle",
     "desc": "Stainless-steel vacuum flask, 600 ml, keeps drinks cold 24 h.",
     "price": 21.99,
+    "category": "bottle",
     "img": "images/insulatedwaterbottle.jpg"
   },
   {
@@ -39,6 +44,7 @@
     "name": "Standing Desk Converter",
     "desc": "Height-adjustable desktop riser, fits dual-monitor setup.",
     "price": 119.0,
+    "category": ["desk", "coverter"],
     "img": "images/standingdeskconverter.jpg"
   },
   {
@@ -46,6 +52,7 @@
     "name": "Gaming Mouse",
     "desc": "Ergonomic RGB mouse, 12 000 DPI optical sensor, 6 buttons.",
     "price": 39.5,
+    "category": "mouse",
     "img": "images/gamingmouse.jpg"
   },
   {
@@ -53,6 +60,7 @@
     "name": "4 K Action Camera",
     "desc": "Water-proof 4 K/60 fps action cam with 170° wide-angle lens.",
     "price": 149.99,
+    "category": "camera",
     "img": "images/4kactioncamera.jpg"
   },
   {
@@ -60,6 +68,7 @@
     "name": "Smart LED Light Strip",
     "desc": "5 m RGBIC strip, app & voice control, music-sync mode.",
     "price": 27.9,
+    "category": ["light", "led", "strip"],
     "img": "images/smartledlightstrip.jpg"
   },
   {
@@ -67,6 +76,7 @@
     "name": "Portable Projector",
     "desc": "1080 p mini projector with speaker, up to 120-inch screen.",
     "price": 239.0,
+    "category": "projector",
     "img": "images/portableprojector.jpg"
   },
   {
@@ -74,6 +84,7 @@
     "name": "Noise-Cancelling Headphones",
     "desc": "Over-ear ANC headphones, 40 h playtime, USB-C fast-charge.",
     "price": 129.0,
+    "category": "headphone",
     "img": "images/noisecancellingheadphones.jpg"
   },
   {
@@ -81,6 +92,7 @@
     "name": "Ceramic Pour-Over Coffee Set",
     "desc": "600 ml carafe + V60 dripper, heat-resistant glass.",
     "price": 42.75,
+    "category": "coffee set",
     "img": "images/ceramicpourovercoffeeset.jpg"
   },
   {
@@ -88,6 +100,7 @@
     "name": "Fitness Smartwatch",
     "desc": "AMOLED display, heart-rate & SpO₂ monitor, GPS, 7-day battery.",
     "price": 139.99,
+    "category": ["watch", "smartwatch"],
     "img": "images/fitnesssmartwatch.jpg"
   },
   {
@@ -95,6 +108,7 @@
     "name": "USB-C Hub",
     "desc": "7-in-1 aluminum hub: HDMI 4 K, 3×USB 3.0, 100 W PD, SD/TF.",
     "price": 29.9,
+    "category": ["usb", "hub"],
     "img": "images/usbchub.jpg"
   },
   {
@@ -102,6 +116,7 @@
     "name": "Minimalist Laptop Backpack",
     "desc": "15.6-inch padded compartment, water-repellent fabric.",
     "price": 58.0,
+    "category": "backpack",
     "img": "images/minimalistlaptopbackpack.jpg"
   },
   {
@@ -109,6 +124,7 @@
     "name": "Adjustable Dumbbell Set",
     "desc": "Pair of 2–20 kg adjustable dumbbells with quick-lock mechanism.",
     "price": 179.0,
+    "category": "dumbbell",
     "img": "images/adjustabledumbbellset.jpg"
   },
   {
@@ -116,6 +132,7 @@
     "name": "Leather Wallet",
     "desc": "RFID-blocking bifold wallet, full-grain leather, 8 card slots.",
     "price": 34.5,
+    "category": "wallet",
     "img": "images/leatherwallet.jpg"
   },
   {
@@ -123,6 +140,7 @@
     "name": "Silk Sleep Mask",
     "desc": "100 % mulberry-silk sleep mask with adjustable strap.",
     "price": 15.8,
+    "category": "sleep mask",
     "img": "images/silksleepmask.jpg"
   },
   {
@@ -130,6 +148,7 @@
     "name": "Wireless Charger Stand",
     "desc": "15 W Qi fast-charge stand, MagSafe-compatible phones.",
     "price": 23.9,
+    "category": ["charger", "stand"],
     "img": "images/wirelesschargerstand.jpg"
   },
   {
@@ -137,6 +156,7 @@
     "name": "Aromatherapy Diffuser",
     "desc": "300 ml ultrasonic diffuser with 7-color LED and timer.",
     "price": 26.4,
+    "category": "diffuser",
     "img": "images/aromatherapydiffuser.jpg"
   }
 ]
