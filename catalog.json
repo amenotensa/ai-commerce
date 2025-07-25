@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Sport T-Shirt",
+    "desc": "Moisture-wicking polyester tee, ideal for running and gym.",
+    "price": 25.99,
+    "img": "images/sporttshirt.jpg"
+  },
+  {
+    "id": 2,
+    "name": "City Backpack",
+    "desc": "20 L water-resistant daypack for daily commute or travel.",
+    "price": 49.5,
+    "img": "images/citybackpack.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Wireless Earbuds",
+    "desc": "Bluetooth 5.3 earbuds with ANC and 30-hour battery life.",
+    "price": 89.0,
+    "img": "images/wirelessearbuds.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Yoga Mat",
+    "desc": "6 mm eco-friendly TPE mat, non-slip texture, 183 × 61 cm.",
+    "price": 32.8,
+    "img": "images/yogamat.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Insulated Water Bottle",
+    "desc": "Stainless-steel vacuum flask, 600 ml, keeps drinks cold 24 h.",
+    "price": 21.99,
+    "img": "images/insulatedwaterbottle.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Standing Desk Converter",
+    "desc": "Height-adjustable desktop riser, fits dual-monitor setup.",
+    "price": 119.0,
+    "img": "images/standingdeskconverter.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Gaming Mouse",
+    "desc": "Ergonomic RGB mouse, 12 000 DPI optical sensor, 6 buttons.",
+    "price": 39.5,
+    "img": "images/gamingmouse.jpg"
+  },
+  {
+    "id": 8,
+    "name": "4 K Action Camera",
+    "desc": "Water-proof 4 K/60 fps action cam with 170° wide-angle lens.",
+    "price": 149.99,
+    "img": "images/4kactioncamera.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Smart LED Light Strip",
+    "desc": "5 m RGBIC strip, app & voice control, music-sync mode.",
+    "price": 27.9,
+    "img": "images/smartledlightstrip.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Portable Projector",
+    "desc": "1080 p mini projector with speaker, up to 120-inch screen.",
+    "price": 239.0,
+    "img": "images/portableprojector.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Noise-Cancelling Headphones",
+    "desc": "Over-ear ANC headphones, 40 h playtime, USB-C fast-charge.",
+    "price": 129.0,
+    "img": "images/noisecancellingheadphones.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Ceramic Pour-Over Coffee Set",
+    "desc": "600 ml carafe + V60 dripper, heat-resistant glass.",
+    "price": 42.75,
+    "img": "images/ceramicpourovercoffeeset.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Fitness Smartwatch",
+    "desc": "AMOLED display, heart-rate & SpO₂ monitor, GPS, 7-day battery.",
+    "price": 139.99,
+    "img": "images/fitnesssmartwatch.jpg"
+  },
+  {
+    "id": 14,
+    "name": "USB-C Hub",
+    "desc": "7-in-1 aluminum hub: HDMI 4 K, 3×USB 3.0, 100 W PD, SD/TF.",
+    "price": 29.9,
+    "img": "images/usbchub.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Minimalist Laptop Backpack",
+    "desc": "15.6-inch padded compartment, water-repellent fabric.",
+    "price": 58.0,
+    "img": "images/minimalistlaptopbackpack.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Adjustable Dumbbell Set",
+    "desc": "Pair of 2–20 kg adjustable dumbbells with quick-lock mechanism.",
+    "price": 179.0,
+    "img": "images/adjustabledumbbellset.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Leather Wallet",
+    "desc": "RFID-blocking bifold wallet, full-grain leather, 8 card slots.",
+    "price": 34.5,
+    "img": "images/leatherwallet.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Silk Sleep Mask",
+    "desc": "100 % mulberry-silk sleep mask with adjustable strap.",
+    "price": 15.8,
+    "img": "images/silksleepmask.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Wireless Charger Stand",
+    "desc": "15 W Qi fast-charge stand, MagSafe-compatible phones.",
+    "price": 23.9,
+    "img": "images/wirelesschargerstand.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Aromatherapy Diffuser",
+    "desc": "300 ml ultrasonic diffuser with 7-color LED and timer.",
+    "price": 26.4,
+    "img": "images/aromatherapydiffuser.jpg"
+  }
+]
